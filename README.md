@@ -1,4 +1,15 @@
+## First run
+
+Before you can start you need to install deps and copy mermaid to the assets folder. Make sure you have `npm` installed, then run:
+
+```
+npm install
+cp node_modules/mermaid/dist/mermaid.min.js assets/mermaid.min.js
+```
+
 ## Compile presentation
+
+Compile the presentation to presentation.html:
 
 ```
 npm run build
