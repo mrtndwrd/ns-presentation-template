@@ -1,0 +1,245 @@
+/** @theme ns */
+@import 'default';
+
+@font-face {
+    font-family: 'NSSans';
+    src: url('https://static-ns-nl-data.fep-p.cla.ns.nl/apps/nessie/fonts/1.0.1/nssans-regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NSSans';
+    src: url('https://static-ns-nl-data.fep-p.cla.ns.nl/apps/nessie/fonts/1.0.1/nssans-bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'NSSans';
+    src: url('https://static-ns-nl-data.fep-p.cla.ns.nl/apps/nessie/fonts/1.0.1/nssans-italic.woff2') format('woff2');
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NSSans';
+    src: url('https://static-ns-nl-data.fep-p.cla.ns.nl/apps/nessie/fonts/1.0.1/nssans-bolditalic.woff2') format('woff2');
+    font-weight: 700;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'NSSans';
+    src: url('https://static-ns-nl-data.fep-p.cla.ns.nl/apps/nessie/fonts/1.0.1/nssans-demi.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+/* --- General slides --- */
+section {
+    font-family: 'NSSans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    color: #003082;
+    /* NS blue */
+    padding: 40px;
+    background-color: white;
+    background-image: url("data:image/svg+xml;utf8,<svg version='1.1' viewBox='0 0 409.6 230.4' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'><defs><linearGradient id='a' x1='-30.268' x2='427.41' y1='121.22' y2='121.22' gradientUnits='userSpaceOnUse'><stop stop-color='%23ffcc23' offset='0'/><stop stop-color='%23fff' offset='1'/></linearGradient></defs><path d='m6.8365 228.99c14.082-0.29216 34.65-1.9283 55.452-8.0637 20.802-6.1354 41.837-16.77 63.866-33.306s45.051-38.974 68.657-61.762c23.607-22.789 47.797-45.927 69.826-64.684 22.029-18.757 41.895-33.131 58.198-41.954 16.303-8.8232 29.04-12.095 42.772-14.257 13.732-2.162 28.456-3.2137 45.518-4.0902 17.062-0.87648 36.461-1.5777-31.672-1.6945-68.133-0.11686-223.79 0.35059-309.16 0.64275s-100.44 0.40902-100.56-5.668c-0.11672-6.077 14.725-18.347 22.262 24.601 7.5377 42.948 7.7714 141.11 4.1486 190.08-3.6228 48.966-11.102 48.732-14.842 43.59-3.7396-5.1421-3.7396-15.192 0.05851-19.691 3.7981-4.4992 11.394-3.4475 25.476-3.7396z' fill='url(%23a)'/></svg>");
+}
+
+/* --- Title slide --- */
+section.title,
+section[data-marp-theme~="title"] {
+    background: #ffda29;
+    /* NS yellow */
+    color: #003082;
+    /* NS blue */
+}
+
+section.title h1,
+section[data-marp-theme~="title"] h1 {
+    font-size: 2.5em;
+    margin-top: 0;
+    font-weight: 700;
+}
+
+
+/* --- Headings --- */
+h1,
+h2,
+h3 {
+    font-weight: 600;
+    /* Demi */
+}
+
+
+/* --- Special section that is not centered vertically --- */
+section.large-gap {
+    display: flex;
+    gap: 300px;
+}
+
+/* --- Misc styles --- */
+blockquote {
+    border-left: 4px solid #003082;
+    background: #fffbe6;
+    color: #003082;
+    margin: 1em 0;
+    padding: 0.5em 1em;
+}
+
+code,
+pre {
+    background: #00308212;
+    color: #003082;
+    border-radius: 4px;
+}
+
+hr {
+    border: 1px solid #003082;
+    margin: 2em 0;
+}
+
+ul,
+ol {
+    color: #003082;
+}
+
+a {
+    color: #003082;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+section.scale-110 {
+    --scale: 1.10;
+}
+
+section.scale-125 {
+    --scale: 1.25;
+}
+
+section.scale-150 {
+    --scale: 1.50;
+}
+
+section.scale-160 {
+    --scale: 1.60;
+}
+
+section.scale-200 {
+    --scale: 2.00;
+}
+
+section.scale-110 {
+    --scale: 1.10;
+}
+
+section.scale-120 {
+    --scale: 1.20;
+}
+
+section.scale-130 {
+    --scale: 1.30;
+}
+
+section.scale-140 {
+    --scale: 1.40;
+}
+
+section.scale-150 {
+    --scale: 1.50;
+}
+
+section.scale-160 {
+    --scale: 1.60;
+}
+
+section.scale-170 {
+    --margin-top: -7%;
+    --scale: 1.70;
+}
+
+section.scale-180 {
+    --scale: 1.80;
+}
+
+
+section.scale-200 {
+    --margin-top: -5%;
+    --scale: 2.00;
+}
+
+section.margin--5 {
+    --margin-top: -5%;
+}
+
+section.margin--11 {
+    --margin-top: -11%;
+}
+
+section.margin--15 {
+    --margin-top: -15%;
+}
+
+section[class*=scale-],
+section[class*=margin-] {
+    .mermaid {
+        margin-top: var(--margin-top, 0%);
+        transform: scale(var(--scale, 1));
+        transform-origin: center;
+    }
+}
+
+
+section.big-diagram {
+    .mermaid {
+        transform: scale(1.5);
+        transform-origin: center;
+    }
+}
+
+.mermaid {
+    /* Center mermaid diagrams */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85%;
+    transform-origin: center;
+}
+
+.mermaid svg g.person-man>text:first-of-type {
+    display: none;
+}
+
+.mermaid svg g.person-man>text:nth-of-type(3) {
+    font-size: 48px;
+}
+
+.mermaid svg g.actor-bottom {
+    display: none;
+}
+
+.mermaid svg {
+
+    g.actor-top[name=VLC],
+    g.actor-top[name=MKS],
+    g.actor-top[name=TDL],
+    g.actor-top[name=DVL] {
+        circle {
+            fill: white;
+        }
+    }
+}
+
+.mermaid svg rect.actor-bottom {
+    display: none;
+}
+
+.two-column-container {
+    display: flex;
+    gap: 40px;
+}
+
+.col {
+    flex: 1;
+}

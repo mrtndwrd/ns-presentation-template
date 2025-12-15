@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "build": "marp --engine ./engine.ts presentation.md --theme ./themes/ns.css --html --output ./presentation.html",
+    "build:debug": "marp --engine ./engine.ts presentation.md --theme ./themes/ns.css --html --output ./presentation.html --debug=true",
+    "watch": "marp --engine ./engine.ts presentation.md --theme ./themes/ns.css --html --output ./presentation.html --watch"
+  },
+  "dependencies": {
+    "@marp-team/marp-cli": "^4.2.3",
+    "mermaid": "^11.12.1"
+  }
+}

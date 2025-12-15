@@ -1,0 +1,4 @@
+node_modules/**
+assets/mermaid.min.js
+**.swp
+presentation.html
